@@ -156,7 +156,7 @@ struct ContentView: View {
             }
         case .percent:
             let newValue = (Double(self.value) ?? 0) * 0.01
-            self.value = "\(newValue)"
+            self.value = String(format: "%.2f", newValue)
         default:
             let number = button.rawValue
             if self.value == "0" {
