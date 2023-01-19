@@ -8,12 +8,11 @@ Calculator is a basic iOS calculator app built using SwiftUI.
 - [Requirements](#Requirements)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Testing](#testing)
 - [Contact](#contact)
 
 ## Description
 
-Some of the main features include:
+Some of the main features include basic arithmetic.
 
 ## Requirements
 
@@ -21,6 +20,7 @@ Some of the main features include:
 - iPhone 8 or newer
 
 ## Demo
+<img src="https://github.com/kabirdhillon7/Calculator/blob/main/Calculator%20Walkthrough.gif" width=250><br>
 
 ## Installation
 
@@ -38,9 +38,11 @@ git clone https://github.com/kabirdhillon7/Calculator
 
 Open the `Calculator.xcodeproj` file in Xcode. Make sure that the `Calculator` scheme is selected, and then click the "Run" button to build and run the app.
 
+<!--
 ## Testing
 
 Information on how to test the project, including any automation scripts or test suites that have been set up.
+-->
 
 ## Contact
 
