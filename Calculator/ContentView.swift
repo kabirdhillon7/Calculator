@@ -104,6 +104,7 @@ struct ContentView: View {
     }
     
     func didTap(button: CalcButton) {
+        
         switch button {
         case .add, .subtract, .divide, .multiply, .equal:
             if button == .add {
@@ -139,8 +140,23 @@ struct ContentView: View {
         case .clear:
             self.value = "0"
             break
-        case .decimal, .negative, .percent:
-            break
+        case .decimal:
+            if self.value.contains(".") {
+                return
+            } else {
+                self.value = "\(self.value)."
+            }
+        case .negative:
+            if self.value.contains("-") {
+                let positiveValue = (Int(self.value) ?? 0) * -1
+                self.value = "\(positiveValue)"
+            } else {
+                let negativeValue = (Int(self.value) ?? 0) * -1
+                self.value = "\(negativeValue)"
+            }
+        case .percent:
+            let newValue = (Double(self.value) ?? 0) * 0.01
+            self.value = "\(newValue)"
         default:
             let number = button.rawValue
             if self.value == "0"{
