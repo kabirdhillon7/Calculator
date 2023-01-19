@@ -78,7 +78,7 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                // Out Buttons
+                // Our Buttons
                 ForEach(buttons, id: \.self) { row in
                     HStack(spacing: 12) {
                         ForEach(row, id: \.self) { item in
@@ -159,7 +159,7 @@ struct ContentView: View {
             self.value = "\(newValue)"
         default:
             let number = button.rawValue
-            if self.value == "0"{
+            if self.value == "0" {
                 value = number
             } else {
                 self.value = "\(self.value)\(number)"
