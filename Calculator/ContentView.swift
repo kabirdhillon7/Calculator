@@ -73,6 +73,8 @@ struct ContentView: View {
                         .bold()
                         .font(.system(size: 100))
                         .foregroundColor(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.2)
                 }
                 .padding()
                 
