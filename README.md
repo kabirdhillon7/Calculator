@@ -12,12 +12,12 @@ Calculator is a basic iOS calculator app built using SwiftUI.
 
 ## Description
 
-Some of the main features include basic arithmetic.
+Some of the main features include basic arithmetic operations
 
 ## Requirements
 
 - iOS 16.0 or later
-- iPhone 8 or newer
+- iPhone 8 or iPhone SE (2nd Generation) or newer
 
 ## Demo
 <img src="https://github.com/kabirdhillon7/Calculator/blob/main/Calculator%20Walkthrough.gif" width=250><br>
